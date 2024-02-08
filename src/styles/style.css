@@ -1,0 +1,104 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#131313, #212b06);
+}
+
+.title {
+    font-size: 80px;
+    color: #fff;
+    font-weight: bold;
+ 
+    animation: animationTitle 1.5s;
+}
+
+@keyframes animationTitle{ 
+    from {
+        transform: rotateX(90deg);
+    }
+    to { 
+        transform: rotateX(0deg);
+    }
+}
+
+.container-input{ 
+    background-color: rgb(53, 53, 53);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex; 
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container-input input {
+    background-color: transparent;
+    border: 0;
+    color: #ffff;
+    font-size: 17px;
+    margin-right: 13px;
+    outline: none;
+}
+
+.container-input input::placeholder { 
+    color: #8f8f8f
+}
+
+.buttonSearch{ 
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover {
+    transform: scale(1.2);
+}
+
+.main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.main h2 {
+    margin: 8px;
+}
+
+.main span{ 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 828px) {
+    .title {
+        font-size: 45px; 
+    }
+    
+    .container-input{ 
+        background-color: rgb(53, 53, 53);
+        padding: 8px;
+        margin: 22px 0;
+        display: flex; 
+        border-radius: 10px;
+        box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .container-input input {
+        font-size: 12px;
+    }
+
+    
+}
+
+
